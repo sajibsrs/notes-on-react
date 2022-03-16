@@ -11,4 +11,4 @@ Components are key building blocks of React application. A React component is re
 
 ## 1.2 # Component lifecycle
 
-## 1.4 # React hooks
+## 1.3 # React hooks
