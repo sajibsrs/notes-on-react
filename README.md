@@ -7,7 +7,7 @@ Components are key building blocks of React application. A React component is re
 
 ## 1.1 # Type of components
 1. Class components
-2. Function components
+2. Functional components
 
 ## 1.2 # Component lifecycle
 
