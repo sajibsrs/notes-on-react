@@ -1,6 +1,12 @@
 # Notes on React with JavaScript
 
 ## # Contents
+1. [Virtual DOM](#1--virtual-dom-vdom) 
+2. [JSX](#2--jsx)
+3. [Components](#3--components)
+4. [Props](#4--props-properties)
+5. [State](#5--state)
+6. [React hooks](#6--react-hooks)
 
 ## 1 # Virtual DOM (VDOM)
 The virtual DOM is a programming concept where and ideal, or *virtual*, representation of a UI ( *user interface* ) is kept in memory and synced with the *real* DOM ( *document object model* ) by a library such as ReactDOM. This process is called **reconciliation**.
