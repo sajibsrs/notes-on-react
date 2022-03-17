@@ -27,6 +27,8 @@ Components are key building blocks of React application. A React component is re
 #### 1.1.1 - Class components
 Class components are [JavaScript Class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) based components (*Introduced in ES5*). Before React 16.8, only React way you could use lifecycle events and state, is through class component.
 
+*Note: While React team didn't deprecate or no plan to do so as of now. They seems more focused on functional approach which is more up to date. It's better to prefer functional approach over class one.* 
+
 #### 1.1.2 - Functional components
 Before React 16.8 functional components we use today were stateless. If someone wanted to use state then they had to use class components. That's why they were called *functional stateless components* sometime.
 
@@ -39,4 +41,4 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 
 React hooks requires it's own section as theres many things to talk about.
 
-[More on React hooks](docs/hooks.md).
+[More on React hooks](docs/hooks.md)
