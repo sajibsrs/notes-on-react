@@ -51,7 +51,7 @@ function Welcome(props) {
 }
 ```
 
-*Note: Props stands for properties.*
+*Note: Props stands for properties. Props is available to both class and functional components.*
 
 ## 5 # State
 React class components has a built-in state object. State object is used to store property values that belongs to the component. When state changes, the component re-renders.
