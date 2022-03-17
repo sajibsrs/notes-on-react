@@ -15,7 +15,7 @@ function App() {
 }
 ```
 
-In this example HTML like syntax is JSX code and the **{name}** is a JavaScript expression.
+In this example HTML like syntax is JSX code and the `{name}` is a JavaScript expression.
 
 ## 1 # Components
 Components are key building blocks of React application. A React component is reusable block of code, which represents a portion of the user interface. The components are responsible for building and managing the whole user interface after all.
