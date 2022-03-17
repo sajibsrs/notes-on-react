@@ -40,6 +40,7 @@ Before React 16.8 functional components we use today were stateless. If someone 
 *Note: In React 16.8 react introduced **React hook**. Which helped to get rid of those limitations.*
 
 ### 1.2 # Component lifecycle
+React component lifecycle is available in class based components. Components has several *lifecycle methods* that can be overridden to run code at particular times in the process. More details on them can be found [here](docs/lifecycle.md).
 
 ## 2 # React hooks
 Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
