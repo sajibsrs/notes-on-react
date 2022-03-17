@@ -37,4 +37,6 @@ Before React 16.8 functional components we use today were stateless. If someone 
 ## 2 # React hooks
 Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
 
-React hooks requires it's own section as theres many things to talk about. [React hooks](docs/hooks.md).
+React hooks requires it's own section as theres many things to talk about.
+
+[More on React hooks](docs/hooks.md).
