@@ -54,6 +54,9 @@ function Welcome(props) {
 *Note: Props stands for properties.*
 
 ## 5 # State
+React class components has a built-in state object. State object is used to store property values that belongs to the component. When state changes, the component re-renders.
+
+*Note: In functional components React uses `useState()` hook, to manage state.*
 
 ## 6 # React hooks
 Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
