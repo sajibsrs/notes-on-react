@@ -50,8 +50,21 @@ function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
+Which can be used as:
 
-*Note: Props stands for properties. Props is available to both class and functional components.*
+```jsx
+function App() {
+    const name = "Jack";
+    
+    return (
+        <div>
+            <Welcome name={name}>
+        </div>
+    );
+}
+```
+
+*Note: Props stands for properties. Props is available to both class and functional components. You can name the parameter `props` anything you want. But by convention it is called props.*
 
 ## 5 # State
 React class components has a built-in state object. State object is used to store property values that belongs to the component. When state changes, the component re-renders.
