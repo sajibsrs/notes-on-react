@@ -30,7 +30,7 @@ Class components are [JavaScript Class](https://developer.mozilla.org/en-US/docs
 #### 1.1.2 - Functional components
 Before React 16.8 functional components we use today were stateless. If someone wanted to use state then they had to use class components. That's why they were called *functional stateless components* sometime.
 
-*Note: In React 16.8 react introduced **React hook**. Which solved those limitations.*
+*Note: In React 16.8 react introduced **React hook**. Which helped to get rid of those limitations.*
 
 ### 1.2 # Component lifecycle
 
