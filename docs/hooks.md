@@ -25,7 +25,9 @@ function Theme() {
 
 ReactDOM.render(<Theme />, document.getElementById('root'));
 ```
-First we destructured object from import then we destructured array inside `Theme()`. [Learn more about destructuring assignment.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+First we destructured object from import then we destructured array inside `Theme()`.
+
+[Learn more about destructuring assignment.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 
 `useState()` accepts an initial state and returns two values:
