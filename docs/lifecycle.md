@@ -93,6 +93,31 @@ ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
 ### 1.4 # componentDidMount()
+The `componentDidMount()` method is called after the component has rendered.
+This is the place to run statements that requires the render completion.
+
+```jsx
+class Section extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {theme: "dark"};
+  }
+
+  componentDidMount() {
+      setTimeout(() => {
+          this.setState({ theme: "light" });
+      }, 1000);
+  }
+  
+  render() {
+    return (
+      <h1>Current theme {this.state.theme}</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Section />, document.getElementById('root'));
+```
 
 ## 2 # Updating
 
