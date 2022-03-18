@@ -28,6 +28,7 @@ class Header extends React.Component {
     super(props);
     this.state = {theme: "dark"};
   }
+  
   render() {
     return (
       <h1>Current theme {this.state.theme}</h1>
