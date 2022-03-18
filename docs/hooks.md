@@ -9,6 +9,30 @@ Rules of using hooks:
 *Note: Hooks doesn't work in React class components.*
 
 ## 1 # State hook
+State is generally the data application needs to keep track of. `useState()` Hook allows tracking and processing of the state in a functional component.
+
+```jsx
+import { useState } from "react";
+
+function Theme() {
+    const [theme, setTheme] = useState("dark");
+
+    return (
+        <h1>Current theme is {theme}</h1>
+        <button type="button" onClick={() => setTheme("light")}>Light</button>
+    );
+}
+
+ReactDOM.render(<Theme />, document.getElementById('root'));
+```
+First we destructured object from import then we destructured array inside `Theme()`. [Learn more about destructuring assignment.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+
+`useState()` accepts an initial state and returns two values:
+1. Current state
+2. A function to update the state
+
+
 
 ## 2 # Effect hook
 
