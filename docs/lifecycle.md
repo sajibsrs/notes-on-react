@@ -39,6 +39,8 @@ class Header extends React.Component {
 ReactDOM.render(<Header />, document.getElementById('root'));
 ```
 
+*Note: You should never assign values to state object as object properties. Instead assign as **object literal***.
+
 ## 2 # Updating
 
 ## 3 # Unmounting
