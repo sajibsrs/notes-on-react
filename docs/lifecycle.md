@@ -162,6 +162,43 @@ In the `shouldComponentUpdate()` method you can return a **Boolean** value that 
 
 The default value is `true`. If set to `false` React will continue with it's normal procedures but omits re-render.
 
+```jsx
+class Section extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {theme: "dark"};
+  }
+
+  shouldComponentUpdate() {
+    return false;
+  }
+  
+  changeTheme = () => {
+    this.setState({ theme: "light" })
+  }
+  
+  render() {
+    return (
+      <h1>Current theme {this.state.theme}</h1>
+      <button type="button" onClick={this.changeTheme}>Change Theme</button>
+    );
+  }
+}
+
+ReactDOM.render(<Section />, document.getElementById('root'));
+```
+
+*Note: Notice how the method gets called inside jsx.*
+
+It's:
+```jsx
+onClick={this.changeTheme}
+```
+Not:
+```jsx
+onClick={this.changeTheme()}
+```
+
 ### 2.3 # render()
 
 ### 2.4 # getSnapshotBeforeUpdate()
