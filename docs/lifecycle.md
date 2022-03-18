@@ -23,7 +23,7 @@ React has **four** built-in methods that can be called during mounting component
 The `constructor()` is called with props, as arguments and should always start by calling the `super(props)` before anything else, this initiates the parent constructor method and allows the component to inherit methods from its parent (`React.Component`).
 
 ```jsx
-class Header extends React.Component {
+class Section extends React.Component {
   constructor(props) {
     super(props);
     this.state = {theme: "dark"};
@@ -36,7 +36,7 @@ class Header extends React.Component {
   }
 }
 
-ReactDOM.render(<Header />, document.getElementById('root'));
+ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
 *Note: You should never assign values to state object as object properties. Instead assign as **object literal***.
@@ -52,6 +52,31 @@ this.state = {theme: "dark"};
 ```
 
 ### 1.2 # getDerivedStateFromProps()
+The `getDerivedStateFromProps()` method is called right before rendering the element(s) in the DOM.
+This is the natural place to set the `state` object based on initial `props`.
+It takes `state` as argument and returns an updated `state` object.
+
+```jsx
+class Section extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {theme: "dark"};
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    return {theme: props.theme};
+  }
+  
+  render() {
+    return (
+      <h1>Current theme {this.state.theme}</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Section />, document.getElementById('root'));
+```
+
 ### 1.3 # render()
 ### 1.4 # componentDidMount()
 
