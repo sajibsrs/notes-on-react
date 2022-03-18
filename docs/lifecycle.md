@@ -78,6 +78,20 @@ ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
 ### 1.3 # render()
+The `render()` method is required and is the method that is responsible for the DOM.
+
+```jsx
+class Section extends React.Component {
+  render() {
+    return (
+      <h1>Content of the Section component</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Section />, document.getElementById('root'));
+```
+
 ### 1.4 # componentDidMount()
 
 ## 2 # Updating
