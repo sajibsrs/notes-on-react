@@ -205,6 +205,43 @@ The `render()` method gets called when a component gets *updated* and re-renders
 ### 2.4 # getSnapshotBeforeUpdate()
 The `getSnapshotBeforeUpdate()` method is used to access `props` and `state` values before the update. That means their previous values can be accessed even after the update.
 
+```jsx
+class Section extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {theme: "dark"};
+  }
+  
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({theme: "light"})
+    }, 1000)
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    document.getElementById("div1").innerHTML =
+    "Before the update, the theme was " + prevState.theme;
+  }
+
+  componentDidUpdate() {
+    document.getElementById("div2").innerHTML =
+    "The updated theme is " + this.state.theme;
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Current theme {this.state.theme}</h1>
+        <div id="div1"></div>
+        <div id="div2"></div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Section />, document.getElementById('root'));
+```
+
 ### 2.5 # componentDidUpdate()
 
 ## 3 # Unmounting
