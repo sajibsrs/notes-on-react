@@ -17,7 +17,7 @@ React has **four** built-in methods that can be called during mounting component
 
 *Note: The `render()` method is required and always gets called, others are optional and will get called if defined.*
 
-### 1.1 # Constructor
+### 1.1 # Constructor()
 `constructor()` method gets called before anything else, when component is initialized and is the natural place to set up the initial **state** and other initial values.
 
 The `constructor()` is called with props, as arguments and should always start by calling the `super(props)` before anything else, this initiates the parent constructor method and allows the component to inherit methods from its parent (`React.Component`).
@@ -41,11 +41,26 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 
 *Note: You should never assign values to state object as object properties. Instead assign as **object literal***.
 
-Don't:
-`this.state.theme = "dark";`
+**Don't:** `this.state.theme = "dark";`
 
-Do: `this.state = {theme: "dark"};`
+**Do:** `this.state = {theme: "dark"};`
+
+### 1.2 # getDerivedStateFromProps()
+### 1.3 # render()
+### 1.4 # componentDidMount()
 
 ## 2 # Updating
 
+### 2.1 # getDerivedStateFromProps()
+
+### 2.2 # shouldComponentUpdate()
+
+### 2.3 # render()
+
+### 2.4 # getSnapshotBeforeUpdate()
+
+### 2.5 # componentDidUpdate()
+
 ## 3 # Unmounting
+
+### 3.1 # componentWillUnmount()
