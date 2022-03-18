@@ -41,9 +41,15 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 
 *Note: You should never assign values to state object as object properties. Instead assign as **object literal***.
 
-**Don't:** `this.state.theme = "dark";`
+Don't:
+```jsx
+this.state.theme = "dark";
+```
 
-**Do:** `this.state = {theme: "dark"};`
+Do: 
+```jsx
+this.state = {theme: "dark"};
+```
 
 ### 1.2 # getDerivedStateFromProps()
 ### 1.3 # render()
