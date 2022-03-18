@@ -211,7 +211,7 @@ class Section extends React.Component {
     super(props);
     this.state = {theme: "dark"};
   }
-  
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({theme: "light"})
@@ -243,7 +243,10 @@ ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
 ### 2.5 # componentDidUpdate()
+The `componentDidUpdate()` method is called after the component is updated in the DOM.
 
 ## 3 # Unmounting
+Unmounting is when a component is removed from the DOM.
 
 ### 3.1 # componentWillUnmount()
+The `componentWillUnmount()` method is called when the component is about to be removed from the DOM.
