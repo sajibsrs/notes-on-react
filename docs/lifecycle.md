@@ -41,6 +41,11 @@ ReactDOM.render(<Header />, document.getElementById('root'));
 
 *Note: You should never assign values to state object as object properties. Instead assign as **object literal***.
 
+Don't:
+`this.state.theme = "dark";`
+
+Do: `this.state = {theme: "dark"};`
+
 ## 2 # Updating
 
 ## 3 # Unmounting
