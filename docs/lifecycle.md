@@ -157,6 +157,9 @@ class Section extends React.Component {
 ReactDOM.render(<Section />, document.getElementById('root'));
 
 ### 2.2 # shouldComponentUpdate()
+In the `shouldComponentUpdate()` method you can return a **Boolean** value that specifies whether React should continue with the rendering or not.
+
+The default value is `true`. If set to `false` React will continue with it's normal procedures but omits re-render.
 
 ### 2.3 # render()
 
