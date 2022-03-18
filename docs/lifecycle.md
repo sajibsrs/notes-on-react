@@ -130,6 +130,31 @@ React has **five** built-in methods that gets called in specified order when com
 5. `componentDidUpdate()`
 
 ### 2.1 # getDerivedStateFromProps()
+This is the first method that gets called when a component gets updated.
+
+The `getDerivedStateFromProps()` method is called right before rendering the element(s) in the DOM.
+This is the natural place to set the `state` object based on initial `props`.
+It takes `state` as argument and returns an updated `state` object.
+
+```jsx
+class Section extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {theme: "dark"};
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    return {theme: props.theme};
+  }
+  
+  render() {
+    return (
+      <h1>Current theme {this.state.theme}</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Section />, document.getElementById('root'));
 
 ### 2.2 # shouldComponentUpdate()
 
