@@ -200,6 +200,7 @@ onClick={this.changeTheme()}
 ```
 
 ### 2.3 # render()
+The `render()` method gets called when a component gets *updated* and re-renders with new changes.
 
 ### 2.4 # getSnapshotBeforeUpdate()
 
