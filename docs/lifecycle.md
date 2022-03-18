@@ -120,6 +120,14 @@ ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
 ## 2 # Updating
+Whenever there is a change in the component `state` or `props` React triggers a component update.
+React has **five** built-in methods that gets called in specified order when component is updated.
+
+1. `getDerivedStateFromProps()`
+2. `shouldComponentUpdate()`
+3. `render()`
+4. `getSnapshotBeforeUpdate()`
+5. `componentDidUpdate()`
 
 ### 2.1 # getDerivedStateFromProps()
 
