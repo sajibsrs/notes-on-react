@@ -203,6 +203,7 @@ onClick={this.changeTheme()}
 The `render()` method gets called when a component gets *updated* and re-renders with new changes.
 
 ### 2.4 # getSnapshotBeforeUpdate()
+The `getSnapshotBeforeUpdate()` method is used to access `props` and `state` values before the update. That means their previous values can be accessed even after the update.
 
 ### 2.5 # componentDidUpdate()
 
