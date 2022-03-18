@@ -46,7 +46,7 @@ Before React 16.8 functional components we use today were stateless. If someone 
 *Note: In React 16.8 react introduced **React hook**. Which helped to get rid of those limitations.*
 
 ### 3.2 # Component lifecycle
-React component lifecycle is available in class based components. Components has several *lifecycle methods* that can be overridden to run code at particular times in the process. More details on them can be found [here](docs/lifecycle.md).
+React component lifecycle is available in class based components. Components has several *lifecycle methods* that can be overridden to run code at particular times in the process. [More details on lifecycle events](docs/lifecycle.md).
 
 ## 4 # Props (Properties)
 React components accepts arbitrary input, which is called **props**.
