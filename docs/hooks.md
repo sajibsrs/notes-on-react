@@ -25,3 +25,5 @@ Rules of using hooks:
 ## 8 # Layout effect hook
 
 ## 9 # Debug value hook
+
+## 10 # Custom hook
