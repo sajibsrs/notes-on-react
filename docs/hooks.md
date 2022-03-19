@@ -67,6 +67,39 @@ export default CountDown;
 ReactDOM.render(<CountDown />, document.getElementById('root'));
 ```
 
+### 2.1 # Effect cleanup
+Some effects require cleanup to handle memory leaks.
+
+**Timeouts, event listeners and some other effects that are no longer needed should be disposed.**
+
+```jsx
+import { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+
+function CountDown() {
+    const [counter, setCounter] = useState(10);
+
+    useEffect(() => {
+        let timer;
+        
+        if (counter > 0) {
+            timer = setTimeout(() => {
+                setCounter( counter => counter - 1);
+            }, 1000);
+        }
+
+        return () => clearTimeout(timer);
+    }, [counter]);
+
+    return <h1>Ready {counter}</h1>;
+}
+
+export default CountDown;
+}
+
+ReactDOM.render(<CountDown />, document.getElementById('root'));
+```
+
 ## 3 # Reducer hook
 
 ## 4 # Context hook
