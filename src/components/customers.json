@@ -1,12 +1,12 @@
 [
     {
-        "name": "Han",
+        "name": "Obi-Wan",
         "age": 24,
         "points": 20,
         "id": 1
     },
     {
-        "name": "Solo",
+        "name": "Han Solo",
         "age": 34,
         "points": 10,
         "id": 2
