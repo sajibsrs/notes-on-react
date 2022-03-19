@@ -70,7 +70,7 @@ ReactDOM.render(<CountDown />, document.getElementById('root'));
 ### 2.1 # Effect cleanup
 Some effects require cleanup to handle memory leaks.
 
-**Timeouts, event listeners and some other effects that are no longer needed should be disposed.**
+**Timeouts, event listeners and some other effects that are no longer needed, should be disposed.**
 
 ```jsx
 import { useState, useEffect } from "react";
