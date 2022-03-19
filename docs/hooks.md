@@ -36,9 +36,36 @@ First we destructured object from import then we destructured array inside `Them
 1. Current state
 2. A function to update the state
 
-
-
 ## 2 # Effect hook
+The `useEffect()` hook allows to perform side effects in components. Side effects are performing operation outside React component lifecycle. As **fetching data, directly updating DOM, timers and, async operations.**
+
+`useEffect()` accepts two arguments, first one is the callback function and the second one is optional dependency as **array**. 
+
+Unless any dependency specified component will keep triggering on every render. If we specify dependency, `useEffect()` will be triggered on dependency change. Passing an empty array will trigger `useEffect()` on initial render only.
+
+```jsx
+import { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+
+function CountDown() {
+    const [counter, setCounter] = useState(10);
+
+    useEffect(() => {
+        if (counter > 0) {
+            setTimeout(() => {
+                setCounter( counter => counter - 1);
+            }, 1000);
+        }
+    }, [counter]);
+
+    return <h1>Ready {counter}</h1>;
+}
+
+export default CountDown;
+}
+
+ReactDOM.render(<CountDown />, document.getElementById('root'));
+```
 
 ## 3 # Reducer hook
 
