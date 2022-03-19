@@ -1,14 +1,17 @@
 function CustomerList(props) {
     return (
-        <ul>
+        <>
+        <p># List in action</p>
+        <div>
             {props.list.map((customer) => (
-                <li key={customer.id}>
-                    <p>Customer ID: {customer.id}</p>
-                    <p>Name: {customer.name}</p>
-                    <p>Age: {customer.age}</p>
-                </li>
+                <div key={customer.id}>
+                    <p>
+                        Customer # id: {customer.id}  Name: {customer.name} Age: {customer.age}
+                    </p>
+                </div>
             ))}
-        </ul>
+        </div>
+        </>
     );
 }
 
