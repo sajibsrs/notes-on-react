@@ -5,7 +5,7 @@ function CountDown() {
 
     useEffect(() => {
         let timer;
-        
+
         if (counter > 0) {
             timer = setTimeout(() => {
                 setCounter( counter => counter - 1);
@@ -15,7 +15,12 @@ function CountDown() {
         return () => clearTimeout(timer);
     }, [counter]);
 
-    return <h1>Ready {counter}</h1>;
+    return (
+        <>
+            <p># useState and useEffect hooks in action</p>
+            <h2>Ready {counter}</h2>
+        </>
+    );
 }
 
 export default CountDown;
