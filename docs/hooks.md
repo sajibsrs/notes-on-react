@@ -101,6 +101,65 @@ ReactDOM.render(<CountDown />, document.getElementById('root'));
 ```
 
 ## 3 # Reducer hook
+The `useReducer()` hook is very similar to `useEffect()` hook. It allows custom state logic. In real applications there will be many state values to keep track of not just a single one. `useReducer()` hook help to manage multiple `state` and complex logic.
+
+`useReducer()` accepts two arguments:
+1. Reducer
+2. Initial state
+
+The `reducer` callback function contains custom state logic and the `initialState` contains the initial value of the `state` which often an *Object*.
+
+The `useReducer()` returns the current `state` and a `dispatch` method.
+
+```jsx
+const initTasks = [
+  {
+    id: 1,
+    title: "task one",
+    done: false,
+  },
+  {
+    id: 2,
+    title: "task two",
+    done: false,
+  }
+];
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "task_check":
+      return state.map(task => {
+        if (task.id === action.id) {
+          return { ...task, done: !task.done };
+        } else {
+          return task;
+        }
+      });
+    default:
+      return state;
+  }
+}
+
+function Task() {
+  const [tasks, dispatch] = useReducer(reducer, initTasks);
+
+  return (
+    <>
+      <p># useReducer hook in action</p>
+      {tasks.map(task => (
+        <div key={task.id}>
+          <label>
+          <input type="checkbox" 
+          checked={task.done} 
+          onChange={() => dispatch({ type: "task_check", id: task.id })} />
+            {task.title}
+          </label>
+        </div>
+      ))}
+    </>
+  );
+}
+```
 
 ## 4 # Context hook
 
