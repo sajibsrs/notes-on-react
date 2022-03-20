@@ -6,7 +6,8 @@ export function ReceiveContext() {
 
   return (
     <>
-      <h1>{`Countdown ${count}`}</h1>
+      <h2># Context in action</h2>
+      <h3>{`Countdown ${count}`}</h3>
     </>
   );
 }
