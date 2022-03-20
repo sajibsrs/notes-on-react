@@ -211,13 +211,22 @@ function ComponentSix() {
 ```
 
 ## 5 # Callback hook
+The `useCallback()` hook returns a memoized callback function. Memoization works similar to caching mechanism. It stores the value and uses later if no new calculation is required, rather than recalculating value in on every render. *Which can improve performance.*
 
-## 6 # Reference hook
+*Note: Memoization is used for value that doesn't need to be recalculated between renders.*
 
-## 7 # Imperative handle hook
+[Learn more about Callback](https://reactjs.org/docs/hooks-reference.html#usecallback)
 
-## 8 # Layout effect hook
+## 6 # Memo hook
 
-## 9 # Debug value hook
+## 7 # Reference hook
 
-## 10 # Custom hook
+## 8 # Imperative handle hook
+
+## 9 # Layout effect hook
+
+## 10 # Debug value hook
+
+## 11 # Custom hook
+
+[Learn more about these hooks](https://reactjs.org/docs/hooks-reference.html)
