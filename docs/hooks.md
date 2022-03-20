@@ -162,6 +162,12 @@ function Task() {
 ```
 
 ## 4 # Context hook
+React **Context** is a way to manage state globally. Instead of the per component states **Context** maintains state globally, so anyone can access it.
+
+**Context** can be combined with the **useState()** hook to share *state* between deeply nested components more easily.
+
+*Note: **state** should be held by the uppermost parent the the stack that requires access to the state. Then we'd require to pass **state** as **props** to the child components.*
+
 
 ## 5 # Callback hook
 
