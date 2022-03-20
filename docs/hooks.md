@@ -181,7 +181,7 @@ const ThemeContext = createContext();
 ```
 
 ### 4.2 # Context provider
-We need to wrap child components in the context provider and supply the state.
+We need to wrap child components in the context provider and supply the state through **value** property.
 
 ```jsx
 function ComponentOne() {
