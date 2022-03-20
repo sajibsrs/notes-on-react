@@ -168,6 +168,47 @@ React **Context** is a way to manage state globally. Instead of the per componen
 
 *Note: **state** should be held by the uppermost parent the the stack that requires access to the state. Then we'd require to pass **state** as **props** to the child components.*
 
+In order to use Context we need **three** things:
+1. Create context
+2. Context provider
+3. Use context
+
+### 4.1 # Create context
+To create context, we need **createContext()** hook.
+
+```jsx
+const ThemeContext = createContext();
+```
+
+### 4.2 # Context provider
+We need to wrap child components in the context provider and supply the state.
+
+```jsx
+function ComponentOne() {
+  const [theme, setTheme] = useState("dark");
+}
+
+return (
+  <ThemeContext.Provider value={theme}>
+    <h1>{`Current theme: ${theme}`}</h1>
+    <ComponentSix />
+  </ThemeContext.Provider>
+);
+```
+### 4.3 # User context
+In order to use the Context in a child component, we need to access it using the `useContext` hook.
+
+```jsx
+function ComponentSix() {
+  const theme = useContext(ThemeContext);
+
+  return (
+    <div>
+      <h1>{`Current theme ${theme}`}</h1>
+    </div>
+  );
+}
+```
 
 ## 5 # Callback hook
 
