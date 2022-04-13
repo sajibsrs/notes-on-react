@@ -5,4 +5,4 @@ React class components has a built-in state object. State object is used to stor
 
 *Note: In functional components React uses `useState()` hook, to manage state.*
 
-[More on React hooks](docs/hooks.md)
+[Learn more about state hook](hooks.md#-state-hook).
