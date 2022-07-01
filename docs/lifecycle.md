@@ -5,7 +5,7 @@ Each components in React has a lifecycle which can be monitored and manipulated 
 2. Updating
 3. Unmounting
 
-## 1 # Mounting
+## # Mounting
 Mounting means putting elements into the *actual DOM*.
 
 React has **four** built-in methods that can be called during mounting components:
@@ -17,7 +17,7 @@ React has **four** built-in methods that can be called during mounting component
 
 *Note: The `render()` method is required and always gets called, others are optional and will get called if defined.*
 
-### 1.1 # Constructor()
+### # Constructor()
 `constructor()` method gets called before anything else, when component is initialized and is the natural place to set up the initial **state** and other initial values.
 
 The `constructor()` is called with props, as arguments and should always start by calling the `super(props)` before anything else, this initiates the parent constructor method and allows the component to inherit methods from its parent (`React.Component`).
@@ -51,7 +51,7 @@ Do:
 this.state = {theme: "dark"};
 ```
 
-### 1.2 # getDerivedStateFromProps()
+### # getDerivedStateFromProps()
 The `getDerivedStateFromProps()` method is called right before rendering the element(s) in the DOM.
 This is the natural place to set the `state` object based on initial `props`.
 It takes `state` as argument and returns an updated `state` object.
@@ -77,7 +77,7 @@ class Section extends React.Component {
 ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
-### 1.3 # render()
+### # render()
 The `render()` method is required and is the method that is responsible for the DOM.
 
 ```jsx
@@ -119,7 +119,7 @@ class Section extends React.Component {
 ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
-## 2 # Updating
+## # Updating
 Whenever there is a change in the component `state` or `props` React triggers a component update.
 React has **five** built-in methods that gets called in specified order when component is updated.
 
@@ -129,7 +129,7 @@ React has **five** built-in methods that gets called in specified order when com
 4. `getSnapshotBeforeUpdate()`
 5. `componentDidUpdate()`
 
-### 2.1 # getDerivedStateFromProps()
+### # getDerivedStateFromProps()
 This is the first method that gets called when a component gets updated.
 
 The `getDerivedStateFromProps()` method is called right before rendering the element(s) in the DOM.
@@ -157,7 +157,7 @@ class Section extends React.Component {
 ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
-### 2.2 # shouldComponentUpdate()
+### # shouldComponentUpdate()
 In the `shouldComponentUpdate()` method you can return a **Boolean** value that specifies whether React should continue with the rendering or not.
 
 The default value is `true`. If set to `false` React will continue with it's normal procedures but omits re-render.
@@ -199,10 +199,10 @@ Not:
 onClick={this.changeTheme()}
 ```
 
-### 2.3 # render()
+### # render()
 The `render()` method gets called when a component gets *updated* and re-renders with new changes.
 
-### 2.4 # getSnapshotBeforeUpdate()
+### # getSnapshotBeforeUpdate()
 The `getSnapshotBeforeUpdate()` method is used to access `props` and `state` values before the update. That means their previous values can be accessed even after the update.
 
 ```jsx
@@ -242,11 +242,11 @@ class Section extends React.Component {
 ReactDOM.render(<Section />, document.getElementById('root'));
 ```
 
-### 2.5 # componentDidUpdate()
+###  # componentDidUpdate()
 The `componentDidUpdate()` method is called after the component is updated in the DOM.
 
-## 3 # Unmounting
+## # Unmounting
 Unmounting is when a component is removed from the DOM.
 
-### 3.1 # componentWillUnmount()
+### # componentWillUnmount()
 The `componentWillUnmount()` method is called when the component is about to be removed from the DOM.
