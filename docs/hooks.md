@@ -4,13 +4,13 @@ Hooks are a new addition in React 16.8. They let you use state and other React f
 *Note: Although React hooks made Class component obsolete, there are no plans to remove Class components from React.*
 
 Conditions of using hooks:
-1. Hooks can only be called inside React functional components.
-2. Hooks can only be called on the top level of the component.
-3. Hooks cannot be conditional.
+* Hooks can only be called inside React functional components.
+* Hooks can only be called on the top level of the component.
+* Hooks cannot be conditional.
 
 *Note: Hooks doesn't work in React class components.*
 
-## 1 # State hook
+## # State hook
 State is generally the data application needs to keep track of. `useState()` Hook allows tracking and processing of the state in a functional component.
 
 ```jsx
@@ -33,10 +33,10 @@ First we destructured object from import then we destructured array inside `Them
 
 
 `useState()` accepts an initial state and returns two values:
-1. Current state
-2. A function to update the state
+* Current state
+* A function to update the state
 
-## 2 # Effect hook
+## # Effect hook
 The `useEffect()` hook allows to perform side effects in components. Side effects are performing operation outside React component lifecycle. As **fetching data, directly updating DOM, timers and, async operations.**
 
 `useEffect()` accepts two arguments, first one is the callback function and the second one is optional dependency as **array**. 
@@ -67,7 +67,7 @@ export default CountDown;
 ReactDOM.render(<CountDown />, document.getElementById('root'));
 ```
 
-### 2.1 # Effect cleanup
+### # Effect cleanup
 Some effects require cleanup to handle memory leaks.
 
 **Timeouts, event listeners and some other effects that are no longer needed, should be disposed.**
@@ -100,7 +100,7 @@ export default CountDown;
 ReactDOM.render(<CountDown />, document.getElementById('root'));
 ```
 
-## 3 # Reducer hook
+## # Reducer hook
 The `useReducer()` hook is very similar to `useEffect()` hook. It allows custom state logic. In real applications there will be many state values to keep track of not just a single one. `useReducer()` hook help to manage multiple `state` and complex logic.
 
 `useReducer()` accepts two arguments:
@@ -161,7 +161,7 @@ function Task() {
 }
 ```
 
-## 4 # Context hook
+## # Context hook
 React **Context** is a way to manage state globally. Instead of the per component states **Context** maintains state globally, so anyone can access it.
 
 **Context** can be combined with the **useState()** hook to share *state* between deeply nested components more easily.
@@ -173,14 +173,14 @@ In order to use Context we need **three** things:
 2. Context provider
 3. Use context
 
-### 4.1 # Create context
+### # Create context
 To create context, we need **createContext()** hook.
 
 ```jsx
 const ThemeContext = createContext();
 ```
 
-### 4.2 # Context provider
+### # Context provider
 We need to wrap child components in the context provider and supply the state through **value** property.
 
 ```jsx
@@ -195,7 +195,7 @@ return (
   </ThemeContext.Provider>
 );
 ```
-### 4.3 # User context
+### # User context
 In order to use the Context in a child component, we need to access it using the `useContext` hook.
 
 ```jsx
@@ -210,16 +210,16 @@ function ComponentSix() {
 }
 ```
 
-## 5 # Callback hook
+## # Callback hook
 The `useCallback()` hook returns a memoized callback function. Memoization works similar to caching mechanism. It stores the value and uses later if no new calculation is required, rather than recalculating value in on every render. *Which can improve performance.*
 
 *Note: Memoization is used for value that doesn't need to be recalculated between renders.*
 
 [Learn more about Callback](https://reactjs.org/docs/hooks-reference.html#usecallback)
 
-## 6 # Memo hook
+## # Memo hook
 
-## 7 # Reference hook
+## # Reference hook
 In the past react **ref** was strongly associated with the DOM. After arrival of **hooks** it can be used just as a reference to anything (DOM node, JS value, etc).
 
 *Note: Beside DOM, **ref** can/should be used similarly to state where re-render is not intended. As **ref** holds its value for whole lifetime  of the component.*
@@ -268,12 +268,12 @@ function ComponentDOM({ isFocus }) {
 }
 ```
 
-## 8 # Imperative handle hook
+## # Imperative handle hook
 
-## 9 # Layout effect hook
+## # Layout effect hook
 
-## 10 # Debug value hook
+## # Debug value hook
 
-## 11 # Custom hook
+## # Custom hook
 
 [Learn more about these hooks](https://reactjs.org/docs/hooks-reference.html)
