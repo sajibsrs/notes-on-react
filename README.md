@@ -5,8 +5,8 @@
 ## # JSX
 
 ## # Components
-* Functional components
-* Class components
+* [Functional components](docs/components.md#-functional-components)
+* [Class components](docs/components.md#-class-components)
 
 ## # Component lifecycle
 
