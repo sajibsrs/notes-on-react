@@ -1,4 +1,4 @@
-# # React Component Props
+# # React Component Props (Properties)
 
 ## # Props (Properties)
 React components accepts arbitrary input, which is called **props**.
