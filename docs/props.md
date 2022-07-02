@@ -37,3 +37,5 @@ function App() {
 ```
 
 *Note: Props stands for properties. Props is available to both class and functional components. You can name the parameter `props` anything you want. But by convention it is called props.*
+
+*Note: React props are read-only. If you try to change the value, you'll get an error.*
