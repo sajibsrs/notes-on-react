@@ -8,7 +8,21 @@ function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
-Which can be used as:
+
+##### # Passing props to another component as string:
+```jsx
+function App() {
+    return (
+        <div>
+            <Welcome name="Jack">
+        </div>
+    );
+}
+```
+
+*Note: It doesn't have to be string type, you can use any data type you want to pass as props*.
+
+##### # Passing props to another component as variable:
 
 ```jsx
 function App() {
