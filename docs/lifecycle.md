@@ -1,4 +1,6 @@
 # Component lifecycle
+**React lifecycle events are only available in class components.**
+
 Each components in React has a lifecycle which can be monitored and manipulated during its **three** main phases.
 
 1. Mounting
