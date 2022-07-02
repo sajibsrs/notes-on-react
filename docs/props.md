@@ -9,7 +9,7 @@ function Welcome(props) {
 }
 ```
 
-##### # Passing props to another component as string:
+### # Passing props to another component as string
 ```jsx
 function App() {
     return (
@@ -22,8 +22,7 @@ function App() {
 
 *Note: It doesn't have to be string type, you can use any data type you want to pass as props*.
 
-##### # Passing props to another component as variable:
-
+### # Passing props to another component as variable
 ```jsx
 function App() {
     const name = "Jack";
