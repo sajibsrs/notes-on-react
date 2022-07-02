@@ -14,6 +14,9 @@
 * [Unmounting](docs/lifecycle.md#-unmounting)
 
 ## # Props
+* [React props](docs/props.md#-props)
+* [Passing props value](docs/props.md#-passing-props-to-another-component-as-string)
+* [Passing props value as variable](docs/props.md#-passing-props-to-another-component-as-variable)
 
 ## # State
 
