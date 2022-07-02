@@ -1,7 +1,7 @@
 # # React Component Props (Properties)
 
 ## # Props
-React components accepts arbitrary input, which is called **props**.
+React components accepts arbitrary input, which is called **props**. Values can be passed from one component to others using props.
 
 ```jsx
 function Welcome(props) {
