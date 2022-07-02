@@ -3,7 +3,7 @@
 
 *Note 2: React component lifecycle is **only available** in class components. This topic is added only to provide a brief overview on how react works under the hood.*
 
-## React
+## # React
 * [Virtual DOM](docs/contents.md#-virtual-dom-vdom)
 * [JSX](docs/contents.md#-jsx)
 
