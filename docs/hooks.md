@@ -222,7 +222,7 @@ The `useCallback()` hook returns a memoized callback function. Memoization works
 ## # Reference hook
 In the past react **ref** was strongly associated with the DOM. After arrival of **hooks** it can be used just as a reference to anything (DOM node, JS value, etc).
 
-*Note: Beside DOM, **ref** can/should be used similarly to state where re-render is not intended. As **ref** holds its value for whole lifetime  of the component.*
+*Note: Beside accessing DOM, **useRef** hook can be used similarly to state to hold value, but where re-render is not intended. As **useRef** hook holds its value for whole lifetime  of the component.*
 
 ```jsx
 function Counter() {
@@ -247,7 +247,7 @@ function Counter() {
 }
 ```
 
-*Note: Only renders once as no change in **state** means no re-render.*
+*Note: Only renders once, as no change in **state** means no re-render.*
 
 ```jsx
 function ComponentDOM({ isFocus }) {
